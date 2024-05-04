@@ -4,14 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html --public-url /mini-project",
-    "pre-start": "npm run build",
-    "server": "npx json-server ./src/db.json"
+    "start": "json-server ./src/db.json"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.19.2",
     "json-server": "^1.0.0-alpha.23",
     "parcel": "^2.12.0"
   }
